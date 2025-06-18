@@ -1,8 +1,31 @@
 .navbar{
-    background-color: #333;
+    /* background-color: #333; */
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 170px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #FF6B6B, #FFD93D);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    background: linear-gradient(90deg, #FFD93D, #FF6B6B);
+    transition: scale(1.05);
 }

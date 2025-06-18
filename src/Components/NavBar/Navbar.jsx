@@ -1,11 +1,11 @@
 import React from 'react'
-import '.Navbar.css'
-import logo from '../../assets/logo.png'
+import './Navbar.css'
+// import logo from '../../assets/logo.png'
 
-function Navbar() {
+const Navbar = () =>{
   return (
     <div className='navbar'>
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
         <ul className='nav-menu'>
           <li>Home</li>
           <li>About Me</li>  
@@ -20,3 +20,11 @@ function Navbar() {
 }
 
 export default Navbar
+
+// const menuItems = ['Home', 'About Me', 'Services', 'Portfolio', 'Contact Me'];
+
+// <ul className='nav-menu'>
+//   {menuItems.map((item, index) => (
+//     <li key={index}>{item}</li>
+//   ))}
+// </ul>

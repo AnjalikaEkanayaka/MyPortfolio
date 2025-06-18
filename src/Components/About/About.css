@@ -1,0 +1,133 @@
+.about {
+  padding: 100px 100px;
+  /* background-color: #f9f9f9; */
+  /* color: #333; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title h1 {
+  font-size: 42px;
+  font-weight: 700;
+  /* color: #222; */
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-left {
+  flex-shrink: 0;
+}
+
+.about-left img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #403838;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-left img:hover {
+  transform: scale(1.05);
+}
+
+.about-right {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-para p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  /* color: #555; */
+}
+
+.about-skill > div {
+  margin: 8px 0;
+}
+
+.about-skill p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.about-skill hr {
+  height: 6px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #FF6B6B, #FFD93D);
+  margin-top: 4px;
+}
+
+/* Achievements */
+.about-achievements {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* background: #fff; */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.about-achievement {
+  text-align: center;
+}
+
+.about-achievement h1 {
+  font-size: 36px;
+  color: #d93f3f;
+  margin-bottom: 8px;
+}
+
+.about-achievement p {
+  font-size: 16px;
+  font-weight: 500;
+  /* color: #333; */
+}
+
+.about-achievements hr {
+  height: 60px;
+  width: 2px;
+  /* background: #eee; */
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-achievements {
+    flex-direction: column;
+  }
+
+  .about-achievements hr {
+    display: none;
+  }
+}
