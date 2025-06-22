@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 // import logo from '../../assets/logo.png'
 
 const Navbar = () =>{
+
+  const [menu, setMenu] = useState("home");
   return (
     <div className='navbar'>
         {/* <img src={logo} alt="" /> */}
@@ -14,6 +16,10 @@ const Navbar = () =>{
           <li>Contact Me</li>
         </ul>
         <div className="nav-connect">Connect With Me</div>
+
+{/* need to add a color or sometthiing
+ to the menu item which is choosen now.
+ Home-> Home-colored or underlined */}
 
     </div>
   )

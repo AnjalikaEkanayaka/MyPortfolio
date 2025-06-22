@@ -34,8 +34,8 @@
   padding: 12px 24px;
   border-radius: 25px;
   background: linear-gradient(90deg, #f15656, #f6ce32);
-  color: white;
-  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: 550;
   cursor: pointer;
   transition: 0.3s ease;
 }
