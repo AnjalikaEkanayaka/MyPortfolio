@@ -1,36 +1,49 @@
-import React, { useState } from 'react'
-import './Navbar.css'
-// import logo from '../../assets/logo.png'
+import React, { useState } from 'react';
+import './Navbar.css';
 
-const Navbar = () =>{
+const Navbar = () => {
+  const [activeMenu, setActiveMenu] = useState('home');
 
-  const [menu, setMenu] = useState("home");
+  const menuItems = [
+    { label: 'Home', id: 'home' },
+    { label: 'About Me', id: 'about' },
+    { label: 'Services', id: 'services' },
+    { label: 'My Work', id: 'mywork' },
+    // { label: 'Contact Me', id: 'contact' },
+  ];
+
+  const handleMenuClick = (item) => {
+    setActiveMenu(item.label); // highlight this one
+    const section = document.getElementById(item.id); // find the section
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' }); // scroll to it
+    }
+  };
+
+  const handleConnectClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setActiveMenu(''); // optional: remove highlight from other nav items
+  };
+
   return (
     <div className='navbar'>
-        {/* <img src={logo} alt="" /> */}
-        <ul className='nav-menu'>
-          <li>Home</li>
-          <li>About Me</li>  
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact Me</li>
-        </ul>
-        <div className="nav-connect">Connect With Me</div>
-
-{/* need to add a color or sometthiing
- to the menu item which is choosen now.
- Home-> Home-colored or underlined */}
-
+      <ul className='nav-menu'>
+        {menuItems.map((item, index) => (
+          <li
+            key={index}
+            className={activeMenu === item.label ? 'active' : ''}
+            onClick={() => handleMenuClick(item)}
+          >
+            {item.label}
+          </li>
+        ))}
+      </ul>
+      <div className="nav-connect" onClick={handleConnectClick}>Connect With Me</div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
-// const menuItems = ['Home', 'About Me', 'Services', 'Portfolio', 'Contact Me'];
-
-// <ul className='nav-menu'>
-//   {menuItems.map((item, index) => (
-//     <li key={index}>{item}</li>
-//   ))}
-// </ul>
+export default Navbar;

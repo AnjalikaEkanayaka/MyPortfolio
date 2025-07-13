@@ -74,7 +74,7 @@
   margin-top: 4px;
 }
 
-/* Achievements */
+/* Achievements
 .about-achievements {
   margin-top: 60px;
   display: flex;
@@ -82,7 +82,7 @@
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
-  /* background: #fff; */
+  /* background: #fff; 
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
@@ -101,15 +101,15 @@
 .about-achievement p {
   font-size: 16px;
   font-weight: 500;
-  /* color: #333; */
+  /* color: #333; 
 }
 
 .about-achievements hr {
   height: 60px;
   width: 2px;
-  /* background: #eee; */
+  /* background: #eee; 
   border: none;
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {

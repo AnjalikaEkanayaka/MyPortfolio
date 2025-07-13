@@ -110,8 +110,8 @@
     border: none;
     /* background-color: #FF6B6B; */
     background: linear-gradient(90deg, #FFD93D, #c22828);
-    color: rgb(54, 5, 5);
-    font-weight: 600;
+    color: rgb(238, 236, 236);
+    font-weight: 500;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -120,5 +120,7 @@
 
 .contact-submit:hover {
     /* background-color: #ff3f3f; */
-    background: linear-gradient(90deg, #c22828, #FFD93D);
+    background: linear-gradient(90deg, #FFD93D, #c22828);
+    transition: 200ms ease-in-out;
+    transform: scale(1.05) ;
 }

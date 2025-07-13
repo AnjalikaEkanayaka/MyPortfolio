@@ -16,13 +16,14 @@ const services_data = [
         s_title: "UI/UX Design",
         s_desc: "Designing intuitive user interfaces and enhancing user experience.",
         icon: "fa-solid fa-paint-brush"
-    },
-    {
-        s_id: "4",
-        s_title: "SEO Optimization",
-        s_desc: "Improving website visibility and search engine rankings.",
-        icon: "fa-solid fa-search"
     }
+    // ,
+    // {
+    //     s_id: "4",
+    //     s_title: "SEO Optimization",
+    //     s_desc: "Improving website visibility and search engine rankings.",
+    //     icon: "fa-solid fa-search"
+    // }
 ];
 
 export default services_data;

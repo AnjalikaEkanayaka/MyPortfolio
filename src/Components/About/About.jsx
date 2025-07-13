@@ -20,15 +20,15 @@ const About = () => {
                     <p>my passion.....</p>
                 </div>
                 <div className="about-skill">
-                    <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}} /></div>
-                    <div className="about-skill"><p>React JS</p><hr style={{width:"30%"}} /></div>
-                    <div className="about-skill"><p>JavaScript</p><hr style={{width:"80%"}} /></div>
-                    <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"60%"}} /></div>
-                    <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"55%"}} /></div>
+                    <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"80%"}} /></div>
+                    <div className="about-skill"><p>React JS</p><hr style={{width:"70%"}} /></div>
+                    <div className="about-skill"><p>Spring Boot</p><hr style={{width:"80%"}} /></div>
+                    <div className="about-skill"><p>Java</p><hr style={{width:"60%"}} /></div>
+                    {/* <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"55%"}} /></div> */}
                 </div>
             </div>
         </div>
-        <div className="about-achievements">
+        {/* <div className="about-achievements">
             <div className="about-achievement">
                 <h1>10+</h1>
                 <p>Years Of Experience</p>
@@ -43,7 +43,7 @@ const About = () => {
                 <h1>10+</h1>
                 <p>Happy Clients</p>
             </div>
-        </div>
+        </div> */}
 
     </div>
   )
